@@ -2,8 +2,8 @@ import './style.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ThemeButton from '../button/Button';
-import Image from '../../assets/bashirFarooqi.jpg'
+import ThemeButton from '../../ThemeBtn/Button';
+import Image from '../../../assets/bashirFarooqi.jpg'
 
 const OurVision: React.FC = () => {
     return (

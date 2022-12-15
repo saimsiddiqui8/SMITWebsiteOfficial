@@ -1,11 +1,11 @@
 import React from 'react';
 import './RegisterNow.tsx'
-import Image from '../assets/logo.jpg';
+import Image from '../../assets/logo.jpg';
 import "./register.css"
 import { PlusOutlined } from '@ant-design/icons';
 import { Form, Input, Select, Tabs, DatePicker, Upload } from 'antd';
 import { Row, Col, Container } from 'react-bootstrap';
-import ThemeButton from '../components/button/Button';
+import ThemeButton from '../ThemeBtn/Button';
 const { TabPane } = Tabs;
 
 const RegisterNow: React.FC = () => {

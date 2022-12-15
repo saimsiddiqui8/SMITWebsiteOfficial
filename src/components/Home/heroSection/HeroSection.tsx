@@ -1,16 +1,21 @@
-import './style.css';
-import Image from '../../assets/Asset.png'
+// import './style.css';
+import Image from '../../../assets/Asset.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ThemeButton from '../button/Button';
-import ContextHeading from '../../components/contextHeading/ContextHeading';
-import OurVision from '../../components/ourVision/OurVision';
+import ThemeButton from '../../ThemeBtn/Button';
+import ContextHeading from '../../contextHeading/ContextHeading';
+import OurVision from '../ourVision/OurVision';
 import OurServices from '../ourServices/OurServices';
 import Slides from '../slider/Slider';
-import TabMenu from '../successStories/Success';
+// import TabMenu from '../successStories/Success';
 import SuccessStories from '../successStories/Success';
-import News from '../announcements/Announcements';
+// import News from '../announcements/Announcements';
+
+
+
+
+
 
 const HeroSection: React.FC = () => {
     return (
@@ -37,9 +42,9 @@ const HeroSection: React.FC = () => {
             </section>
 
             {/* 1th B section  */}
-        <section>
+        {/* <section>
             <News />
-        </section>
+        </section> */}
 
             {/* 2nd section  */}
             <section>

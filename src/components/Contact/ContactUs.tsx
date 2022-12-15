@@ -8,7 +8,7 @@ import { MdMarkEmailUnread } from 'react-icons/md';
 import { BsFacebook } from 'react-icons/bs';
 import { FaClock } from 'react-icons/fa';
 import Form from 'react-bootstrap/Form';
-import ThemeButton from '../components/button/Button';
+import ThemeButton from '../ThemeBtn/Button';
 import { Input } from 'antd';
 import { useState } from 'react';
 
@@ -19,10 +19,7 @@ const { TextArea } = Input;
 // const realTimeDataBase = () => {
 
 // }
-
 const ContactUs = () => {
-
-
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -78,54 +75,6 @@ const ContactUs = () => {
   }
   return (
     <>
-      
-
-      {/* contact form section  */}
-
-      <section>
-        <Container id='formSection'>
-          <div className='text-center pt-5 mt-5 px-3' > <a id='ContactUsHeading'>CONTACT FORM</a> </div>
-          <h1 className='mt-4  text-center display-3 fw-bold'>We Want To <span id='touch'>Hear</span> From <br /> You</h1>
-          <p className='text-center'>Please fill out the form on this section to contact us. Or call between <br /> 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
-
-          <Form className='p-5' method='POST'>
-
-            <Row>
-              <Col>
-                <Form.Group className="mb-3" controlId="formBasicFirstName">
-                  <Form.Label>First Name:</Form.Label>
-                  <Form.Control onChange={GetUserData} value={user.firstName} name="firstName" type="email" placeholder="Enter first name" />
-                </Form.Group>
-              </Col>
-              <Col>
-                <Form.Group className="mb-3" controlId="formBasicLastName">
-                  <Form.Label>Last Name:</Form.Label>
-                  <Form.Control onChange={GetUserData} value={user.lastName} name="lastName" className='' type="email" placeholder="Enter first name" />
-                </Form.Group>
-              </Col>
-            </Row>
-
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address:</Form.Label>
-              <Form.Control onChange={GetUserData} value={user.email} name="email" type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicSubject">
-              <Form.Label>Enter Subject:</Form.Label>
-              <Form.Control onChange={GetUserData} value={user.subject} name="subject" type="text" placeholder="Enter subject" />
-            </Form.Group>
-            <br />
-            <Form.Label>Enter Message:</Form.Label>
-            <TextArea onChange={GetUserData} value={user.message} name="message" rows={4} placeholder="Enter your message..." maxLength={120} />
-            <div className="text-center mt-3 px-3">
-              <ThemeButton data='Submit' clickFunc={PostData} />
-            </div>
-          </Form>
-        </Container>
-      </section>
 
       {/* Heading Section  */}
       <section>
@@ -166,6 +115,54 @@ const ContactUs = () => {
 
         </Container>
       </section>
+
+      {/* contact form section  */}
+      <section>
+        <Container id='formSection'>
+          <div className='text-center pt-5 mt-5 px-3' > <a id='ContactUsHeading'>CONTACT FORM</a> </div>
+          <h1 className='mt-4  text-center display-4 fw-bold'>We Want To <span id='touch'>Hear</span> From  You</h1>
+          <p className='text-center'>Please fill out the form on this section to contact us. Or call between <br /> 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+
+          <Form className='p-5' method='POST'>
+
+            <Row>
+              <Col>
+                <Form.Group className="mb-3" controlId="formBasicFirstName">
+                  <Form.Label>First Name:</Form.Label>
+                  <Form.Control onChange={GetUserData} value={user.firstName} name="firstName" type="email" placeholder="Enter first name" />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group className="mb-3" controlId="formBasicLastName">
+                  <Form.Label>Last Name:</Form.Label>
+                  <Form.Control onChange={GetUserData} value={user.lastName} name="lastName" type="email" placeholder="Enter first name" />
+                </Form.Group>
+              </Col>
+            </Row>
+
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Email address:</Form.Label>
+              <Form.Control onChange={GetUserData} value={user.email} name="email" type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicSubject">
+              <Form.Label>Enter Subject:</Form.Label>
+              <Form.Control onChange={GetUserData} value={user.subject} name="subject" type="text" placeholder="Enter subject" />
+            </Form.Group>
+            <br />
+            <Form.Label>Enter Message:</Form.Label>
+            <TextArea onChange={GetUserData} value={user.message} name="message" rows={4} placeholder="Enter your message..." maxLength={120} />
+            <div className="text-center mt-3 px-3">
+              <ThemeButton data='Submit' clickFunc={PostData} />
+            </div>
+          </Form>
+        </Container>
+      </section>
+
+
     </>
   )
 }

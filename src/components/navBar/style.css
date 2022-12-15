@@ -4,21 +4,13 @@
     transition: 0.3s;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-    transition: 0.8s;
-}
-
-.dropdown-toggle::after {
-    content: none !important;
-}
-
-Nav.Link {
-    color: red !important;
-}
-
 .btn{
     --bs-btn-padding-x: 0.95rem !important;
     --bs-btn-padding-y: 0.288rem !important;
+}
+
+#a:hover {
+    color: #8AC642 !important;
+    border-bottom: 1px solid #8AC642;
+    transition: 0.5s;
 }

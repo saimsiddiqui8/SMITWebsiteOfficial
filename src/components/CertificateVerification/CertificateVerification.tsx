@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Form, Input } from 'antd';
-import ThemeButton from '../components/button/Button'
 
 function CertificateVerification() {
     return (
