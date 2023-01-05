@@ -1,0 +1,16 @@
+#aboutUsDiv {
+    background-image: url("../../assets/servingHumanityCopy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#CharimanMessage {
+    background-image: url("../../assets/PovertyInPakistan.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

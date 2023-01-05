@@ -1,0 +1,49 @@
+.end {
+    margin-bottom: 500px;
+}
+
+#log {
+    text-align: right;
+}
+
+
+.inputBx {
+    position: relative;
+    width: 100%;
+}
+
+#input {
+    position: relative;
+    width: 100%;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#input2 {
+    position: relative;
+    width: 100%;
+    padding: 15px 10px 7.5px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+i {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+input:focus~i {
+    transform: translateY(-8px);
+    font-size: 0.8em;
+    color: #333;
+    
+}

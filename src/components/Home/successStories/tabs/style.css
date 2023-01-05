@@ -1,0 +1,13 @@
+.video-react .video-react-control:before, .video-react .video-react-big-play-button:before{
+    color: #88C446;
+    background-color: #576D3E;
+    border-radius: 6px !important;
+}
+
+.video-react .video-react-big-play-button{
+    border: 0.066666em solid #88C446 !important;
+}
+
+.video-react .video-react-poster{
+    background-color: #3B3B3B !important;
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#heroText{
+    margin-top: 5rem !important;
+}
+#cont {
+    background-color: #0D6DB7;
+    font-family: 'Poppins', sans-serif;
+}
+
+#heading {
+    font-size: 38px;
+    font-weight: 900 !important;
+    white-space: pre-line;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem !important;
+}
+
+#span {
+    color: #8AC642 !important;
+}
+
+
+#helpingHeading {
+    font-weight: 600 !important;
+}
+
+/* Animated typeWriter  */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+#parent {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 28px;
+    color: #8AC642 !important;
+    position: relative;
+    animation-iteration-count: 2;
+
+}
+
+.ant-float-btn-body {
+    background-color: #0D6DB7;
+}
+
+#border {
+    border-bottom: solid 3px #8AC642;
+    position: absolute;
+    right: -7px;
+    width: 20px;
+
+}
+
+/* Animation */
+#parent {
+    animation: animated-text 3s steps(50, end) 1s infinite normal both
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 480px;
+
+    }
+}
+
+/* media query for hero section  */
+
+@media only screen and (max-width: 1200px) {
+    #row {
+        margin-top: 5px !important;
+    }
+
+    #heading {
+        margin-top: 3rem !important;
+        padding-top: 0 !important;
+    }
+
+    #heroImg {
+        margin-top: 5rem !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #row {
+        margin-top: 5px !important;
+    }
+
+    #heading {
+        margin-top: 3rem !important;
+        padding-top: 0 !important;
+    }
+
+    #heroImg {
+        margin-top: 2rem !important;
+        padding-right: 7rem !important;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    #row {
+        margin-top: 0px !important;
+    }
+
+    #heading {
+        margin-top: 2rem !important;
+        padding: 0px !important;
+    }
+
+    #heroImg {
+        margin-top: 2rem !important;
+        padding-right: 4rem !important;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #row {
+        margin-top: 0px !important;
+    }
+
+    #heading {
+        margin-top: 2rem !important;
+        padding: 0px !important;
+    }
+
+    #heroImg {
+        margin-top: 2rem !important;
+        padding-right: 7rem !important;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 330px;
+
+        }
+    }
+
+    #svg {
+        background-position-y: -0px;
+        background-size: 500px;
+        background-repeat: no-repeat;
+    }
+
+    #cont {
+        margin: 0px !important;
+    }
+
+    #heroText {
+        margin-top: 1rem !important;
+    }
+}
+
+/* waves  */
+
+.path-0 {
+    animation: pathAnim-0 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pathAnim-0 {
+    0% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 85.41944349020955,177.04912401236686 170.8388869804191,154.09824802473375 238,162 C 305.1611130195809,169.90175197526625 354.0638955685332,208.6561319134318 426,216 C 497.9361044314668,223.3438680865682 592.9055307454483,199.27722432153897 652,195 C 711.0944692545517,190.72277567846103 734.3139814496736,206.23497080041224 789,197 C 843.6860185503264,187.76502919958776 929.838543455857,153.7828924768121 1012,140 C 1094.161456544143,126.21710752318792 1172.331844726898,132.63345929233938 1243,146 C 1313.668155273102,159.36654070766062 1376.834077636551,179.68327035383032 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    25% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 79.53005839917554,187.4118859498454 159.0601167983511,174.82377189969083 230,169 C 300.9398832016489,163.17622810030917 363.2895912057711,164.1167983510821 434,171 C 504.7104087942289,177.8832016489179 583.7815183785642,190.7090346959808 655,183 C 726.2184816214358,175.2909653040192 789.5843352799725,147.04706286499484 848,146 C 906.4156647200275,144.95293713500516 959.881140501546,171.1027138440399 1017,198 C 1074.118859498454,224.8972861559601 1134.891102713844,252.54208175884574 1206,253 C 1277.108897286156,253.45791824115426 1358.554448643078,226.72895912057714 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    50% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 89.55135692201995,219.8825145997939 179.1027138440399,239.7650291995878 240,256 C 300.8972861559601,272.2349708004122 333.1405015458605,284.8223978014428 404,261 C 474.8594984541395,237.1776021985572 584.335279972518,176.94537959464103 647,154 C 709.664720027482,131.05462040535897 725.5183785640672,145.39608381999312 788,170 C 850.4816214359328,194.60391618000688 959.5912057712126,229.4702851253865 1041,248 C 1122.4087942287874,266.5297148746135 1176.1167983510823,268.72277567846095 1238,258 C 1299.8832016489177,247.27722432153902 1369.9416008244589,223.63861216076953 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    75% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 77.61662658880113,222.27138440398488 155.23325317760225,244.5427688079698 214,229 C 272.76674682239775,213.4572311920302 312.68361387839224,160.1003091721058 373,152 C 433.31638612160776,143.8996908278942 514.0322913088287,181.05599450360702 603,208 C 691.9677086911713,234.94400549639298 789.1872208862933,251.67571281346613 849,258 C 908.8127791137067,264.32428718653387 931.2188251459979,260.24115424252835 991,247 C 1050.781174854002,233.75884575747165 1147.937478529715,211.35967021642045 1229,202 C 1310.062521470285,192.64032978357955 1375.0312607351425,196.32016489178977 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    100% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 85.41944349020955,177.04912401236686 170.8388869804191,154.09824802473375 238,162 C 305.1611130195809,169.90175197526625 354.0638955685332,208.6561319134318 426,216 C 497.9361044314668,223.3438680865682 592.9055307454483,199.27722432153897 652,195 C 711.0944692545517,190.72277567846103 734.3139814496736,206.23497080041224 789,197 C 843.6860185503264,187.76502919958776 929.838543455857,153.7828924768121 1012,140 C 1094.161456544143,126.21710752318792 1172.331844726898,132.63345929233938 1243,146 C 1313.668155273102,159.36654070766062 1376.834077636551,179.68327035383032 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+}

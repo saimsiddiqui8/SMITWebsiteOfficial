@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+#navBar{
+    padding-right: 10rem !important;
+    padding-left: 10rem !important;
+    background-color: #0D6DB7;
+    overflow: hidden !important;
+
+}
+.navDown:hover {
+    background-color: #0D6DB7 !important;
+    color: white !important;
+    transition: 0.3s;
+}
+
+.btn {
+    --bs-btn-padding-x: 0.95rem !important;
+    --bs-btn-padding-y: 0.288rem !important;
+}
+#a{
+    color: white !important;
+}
+#a:hover {
+    color: #88C446 !important;
+    border-bottom: 3px solid #88C446;
+    transition: 0.5s;
+}
+
+#AdmissionBtn {
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #88C446;
+    background-color: #2D8C96;
+    color: #88C446;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 15px !important;
+    border-radius: 10px;
+}
+
+#AdmissionBtn:hover {
+    background-color: #312c2c !important;
+    transition: .5s;
+    color: #88C446;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: lightgreen;
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 987px){
+    #navBar{
+        padding-right: 4rem !important;
+        padding-left: 4rem !important;
+    }
+}
+@media only screen and (max-width: 1180px){
+    #navBar{
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+}

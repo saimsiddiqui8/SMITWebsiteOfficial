@@ -1,0 +1,17 @@
+#cards {
+    background-color: #e5e5e5 !important;
+    border-radius: 50px;
+}
+#cardLogo{
+    color: #0D6DB7;
+    font-size: 3rem !important;
+    margin-bottom: 1rem !important;
+
+}
+:where(.css-dev-only-do-not-override-26rdvq).ant-card .ant-card-body{
+    padding: 0px !important;
+}
+#cards{
+    background-color: #0D6DB7 !important;
+    color: white;
+}
